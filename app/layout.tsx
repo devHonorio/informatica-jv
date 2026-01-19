@@ -18,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${googleSansCode.className} min-h-screen bg-slate-950 text-white selection:bg-cyan-500/30 `}
-      >
+      <body className={`${googleSansCode.className} min-h-screen dark`}>
         <BackgroundGrid />
         {children}
       </body>

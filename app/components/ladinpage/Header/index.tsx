@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Navigation } from "../Navigation";
 import { TitleHeader } from "../TitleHeader";
 
@@ -9,9 +10,7 @@ export const Header = () => {
 
         <Navigation />
 
-        <button className="px-5 py-2 rounded-full bg-purple-600 hover:bg-purple-700 transition font-semibold text-sm">
-          Contato
-        </button>
+        <Button className="rounded-full">Contato</Button>
       </nav>
     </header>
   );

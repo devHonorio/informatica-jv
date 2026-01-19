@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
 import { Bio } from "../Bio";
 import { Experience } from "../Experience";
 import { MissionSection } from "../MissionSection";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -25,12 +27,9 @@ export default function About() {
             Estamos em Ampére/PR, com mobilidade total para atender toda a
             região e desenvolver sistemas para o mundo.
           </p>
-          <a
-            href={`https://wa.me/5544998692094`}
-            className="inline-block px-10 py-4 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-2xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(147,51,234,0.3)]"
-          >
-            Falar com o José e a Vanusa
-          </a>
+          <Link href={`https://wa.me/5544998692094`}>
+            <Button size="lg">Falar com Vanusa</Button>
+          </Link>
         </section>
       </div>
     </div>
