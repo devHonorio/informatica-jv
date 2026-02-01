@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Navigation } from "../Navigation";
 import { TitleHeader } from "../TitleHeader";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -10,7 +11,9 @@ export const Header = () => {
 
         <Navigation />
 
-        <Button className="rounded-full">Contato</Button>
+        <Link href="/portfolio" target="_blank">
+          <Button className="rounded-full">Portfólio</Button>
+        </Link>
       </nav>
     </header>
   );
