@@ -10,6 +10,7 @@ import {
   Smartphone,
 } from "lucide-react";
 import Link from "next/link";
+import DownloadButton from "../components/ladinpage/DownLoadCurriculo";
 
 const projects = [
   {
@@ -62,6 +63,7 @@ export default function Portfolio() {
               </span>
             </div>
           </div>
+          <DownloadButton />
           <Link
             href="https://github.com/devHonorio"
             target="_blank"
